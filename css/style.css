@@ -1,0 +1,626 @@
+/*Спецификация*/
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 38px;
+}
+h3 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.be-static {
+    position: static;
+}
+
+/*Первый экран*/
+
+.header {
+    background: url('../img/bg_heading.png');
+    height: 880px;
+    min-width: 100%;
+    
+}
+.row__menu {
+    height: 112px;
+    border-bottom: 1px solid #7a7a7a;
+   }
+
+.menu__item a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    
+          
+}
+.menu__item {
+    height: 112px;
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 5px solid transparent;
+}
+.menu__item:hover {
+
+    border-bottom: 5px solid #11749e;
+}
+
+.active {
+    border-bottom: 5px solid #11749e;
+}
+
+.social__icons a:hover {
+    opacity: 0.8;
+}
+.heading_row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+
+}
+.heading {
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-weight: bold;
+    
+}
+    
+
+.heading__intro {
+   font-size: 1.75vw;
+   font-weight: bold; 
+   text-transform: uppercase;
+   letter-spacing: 0.7em;
+   color: #196787;
+   margin-top: -30px;
+   
+}
+
+.scroll {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+   
+    
+    
+
+}
+.scroll__text {
+    color:#f1f1f1;
+    font-size: 13px;
+    margin-bottom: 23px;
+    
+}
+.scroll__pic:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/*Второй экран*/
+
+.features {
+    background:#11749e;
+    padding-bottom: 100px;
+}
+
+.features__heading {
+        
+}
+.features__heading_letter {
+    font-weight: 700;
+    font-size: 248px;
+    color: #3c8daf;
+    text-align: center;
+    
+}
+
+.features__heading_head h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: -200px;
+}
+.features__cards {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.features__card {
+    text-align: center;
+    width: 270px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+
+}
+.features__card:hover {
+    padding-left: 15px;
+    cursor: pointer;
+}
+.features__card_pic {
+    width: 60%;
+}
+
+
+.features__card_head {
+    color:#fff;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.features__card_text {
+    color:#fff;
+}
+
+   
+
+/*Третий экран*/
+
+.news .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.news {
+    margin: 0;
+    padding: 0;
+}
+.news__1 .col-md-6, .news__2 .col-md-6 {
+    padding: 0;
+    margin: 0;
+}
+.news__1, .news__2 {
+    min-width: 100%;
+    min-height: 100%;
+}
+.news__1 {
+    background: #222222;
+    position: relative;
+}
+
+.news__2 {
+    background: #f3f3f3;
+    position: relative;
+}
+.news__text {
+    margin: 80px;
+}
+.news__text_date {
+    font-size: 13px;
+}
+.news__text_title {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.news__1 .news__text {
+    color:#fff;
+}
+.news__2 .news__text {
+    color:#000;
+}
+
+.news__1 .news__img {
+    width: 100%;
+    background: url('../img/news/1.png') no-repeat;
+    min-height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+.news__2 .news__img {
+    width: 100%;
+    background: url('../img/news/2.png') no-repeat;
+    min-height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/*Четвертый экран*/
+
+.blog {
+    margin-left: 70px;
+    margin-right: 70px;
+    background: #fff;
+    padding-bottom: 5%;
+}
+.blog__heading_letter {
+    font-weight: 700;
+    font-size: 248px;
+    color: #d7d7d7;
+    text-align: center;
+    
+}
+
+.blog__heading_head h1 {
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: -200px;
+}
+.blog__title {
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+
+}
+.blog__cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.blog__cards_item {
+   width: 265px;
+}
+.blog__cards_item:hover {
+    box-shadow: 0 0 10px -1px #11749e;
+}
+
+.blog__item_img {
+    width: 100%;
+}
+
+.blog__cards_title {
+    color: #11749e;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    
+}
+.blog__cards_text {
+    
+}
+
+/*Пятый экран*/
+
+.notes {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background: #11749e;
+    color: #fff;
+}
+.notes__block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.notes__block_item {
+    margin-left: 60px;
+    
+}
+.notes__block_text {
+    margin-left: 30px;
+}
+.note_img {
+    height: 68px;
+    width: 70px;
+    opacity: 0.8;
+}
+.note_img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*Шестой экран*/
+
+.keys {
+    background: url('../img/key/bg.png');
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.keys__text {
+    display: flex;
+    flex-direction: column;
+
+}
+.keys__text_intro {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.keys__text_img {
+    margin-bottom: 25px;
+    transition: all 0.5s ease;
+}
+.keys__text_img:hover {
+    -moz-transform: scale(0.92);
+    -webkit-transform: scale(0.92);
+    -o-transform: scale(0.92);
+    -ms-transform: scale(0.92);
+    transform: scale(0.92);
+}
+.keys__img {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Седьмой экран*/
+
+.team {
+    background: #fff;
+    padding-bottom: 10%;
+}
+.team__heading_letter {
+    font-weight: 700;
+    font-size: 248px;
+    color: #d7d7d7;
+    text-align: center;
+    
+}
+.team__heading_head h1 {
+    color: #000;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: -200px;
+}
+.team__title {
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+
+}
+.team__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.team__card_pic {
+    width: 100%;
+}
+.team__card {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    position: relative;
+    margin-right: 20px;
+}
+.team__card_desc {
+    text-align: center;
+    background: #fff;
+    width: 80%;
+    height: auto;
+    padding-top: 4%;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    
+}
+.team__card_name {
+    color: #11749e;
+    font-size: 1.1vw;
+    text-align: center;
+    
+}
+.team__card_pos {
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Восьмой экран*/
+.contact {
+    width: 100%;
+    height: auto;
+    background: url('../img/footer_bg.png');
+    padding-bottom: 100px;
+
+}
+.contact__heading_letter {
+    font-weight: 700;
+    font-size: 248px;
+    color: #d7d7d7;
+    opacity: 0.2;
+    text-align: center;
+    
+}
+.contact__heading_head h1 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-align: center;
+    margin-top: -200px;
+    margin-bottom: 120px;
+}
+.contact__form {
+    width: 100%;
+}
+.contact__form_input {
+    display: flex;
+    justify-content: space-between;
+}
+.form_input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.input {
+    background: transparent;
+    width: 32%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid white;
+    font-size: 15px;
+    margin-right: 20x;
+
+}
+input[type="name"]::-webkit-input-placeholder {
+    color: #fff;
+} 
+input[type="name"]::-moz-placeholder {
+    color: #fff;
+}
+input[type="email"]::-webkit-input-placeholder {
+color: #fff;
+} 
+input[type="email"]::-moz-placeholder {
+color: #fff;
+}
+input[type="phone"]::-webkit-input-placeholder {
+color: #fff;
+} 
+input[type="phone"]::-moz-placeholder {
+color: #fff;
+}
+.message {
+    width: 100%;
+    margin-top: 40px;
+    background: transparent;
+    border: 1px solid white;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+textarea:-moz-placeholder { 
+    color: white; 
+}
+textarea::-webkit-input-placeholder {
+     color: white; 
+}
+.contact__btn {
+    width: 100%;
+    text-align: center;
+}
+.button {
+    background: #11749e;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    padding:  13px 48px 13px 48px;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+}
+
+/*Девятый экран*/
+
+.location .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/*Футер*/
+.footer {
+    background: #000;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color:#fff;
+    font-size: 13px;
+}
+.footer__copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/*Медиа запросы*/
+
+@media screen and (max-width: 992px) {
+
+    .menu__item a {
+        font-size: 15px;
+    }
+    .menu__item {
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+    .heading__intro {
+        margin-top: -20px;
+        
+     }
+     .blog__cards {
+        flex-wrap: wrap;
+        
+    }
+    .blog__cards_item {
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+     .blog__cards_item p {
+         font-size: 14px;
+     }
+    .row__keys {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .keys__img_pic {
+        margin-top: 40px;
+    }
+    .features__card_text {
+        font-size: 14px;
+    }
+    .team__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team__card {
+        width: 60%;
+        margin-top: 30px;
+    }
+    
+
+}
+@media screen and (max-width: 720px) {
+
+    .features__cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .features__card {
+        margin-bottom: 30px;
+
+    }
+    
+    
+}
